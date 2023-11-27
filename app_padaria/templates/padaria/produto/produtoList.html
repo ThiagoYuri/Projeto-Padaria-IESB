@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <a href="../"><button>Back Home</button></a>
+    </div>
+    <table>
+        <tr>
+            <th>id_produto</th>
+            <th>nome</th>
+            <th>preco</th>
+        </tr>
+        {% for pedido in pedidos %}
+        <tr>
+            <td>{{pedido.id_produto}}</td>
+            <td>{{pedido.nome}}</td>
+            <td>{{pedido.preco}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

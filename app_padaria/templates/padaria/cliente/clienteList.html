@@ -1,0 +1,23 @@
+<div class="container">
+    <div>
+        <a href="../"><button>Back Home</button></a>
+    </div>
+    <table class="table">
+        <thead>
+            <tr >
+                <th scope="col">id</th>
+                <th scope="col">nome</th>
+                <th scope="col">telefone</th>
+            </tr>
+        </thead>
+        {% for client in clientes %}
+        <tbody>
+            <tr scope="row"> 
+                <td>{{client.id_cliente}}</td>
+                <td>{{client.nome}}</td>
+                <td>{{client.telefone}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
